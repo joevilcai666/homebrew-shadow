@@ -5,21 +5,21 @@
 class Shadow < Formula
   desc "AI agent memory layer — capture corrections, create persistent rules across all your coding tools"
   homepage "https://github.com/joevilcai666/shadow"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joevilcai666/shadow/releases/download/v0.1.1/shadow_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "dc0d3664d01b2d91383c49dd4d28a06538934f9a81bc7ceeb6c04d6a6b9f1036"
+      url "https://github.com/joevilcai666/shadow/releases/download/v0.2.0/shadow_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "6c619a2c60fa2dd96e935f846f43877c2624115b87e1649ced95413b408fd0dc"
 
       define_method(:install) do
         bin.install "shadow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joevilcai666/shadow/releases/download/v0.1.1/shadow_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3eae9b6f567870849e0013b855ebba6b6bc4eb9af04fd67e98faf823c78b6a0c"
+      url "https://github.com/joevilcai666/shadow/releases/download/v0.2.0/shadow_0.2.0_darwin_arm64.tar.gz"
+      sha256 "733d5bec612708c5a9e4e2a4963fb2e723872af39134a4bb1bb2503cf734f2ee"
 
       define_method(:install) do
         bin.install "shadow"
@@ -29,15 +29,15 @@ class Shadow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joevilcai666/shadow/releases/download/v0.1.1/shadow_0.1.1_linux_x86_64.tar.gz"
-      sha256 "d7be4953e540e0a859dd156292661c456297420995f84040cc3600eb761d299e"
+      url "https://github.com/joevilcai666/shadow/releases/download/v0.2.0/shadow_0.2.0_linux_x86_64.tar.gz"
+      sha256 "a7317ff436d4c305b21ec6eeacae839d06586cf419d4addaa732a0c1660bd3a1"
       define_method(:install) do
         bin.install "shadow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joevilcai666/shadow/releases/download/v0.1.1/shadow_0.1.1_linux_arm64.tar.gz"
-      sha256 "fd8c042c0a506917e9af733e9f256ec4e625a8957f0a660ba9e47f33b745ccef"
+      url "https://github.com/joevilcai666/shadow/releases/download/v0.2.0/shadow_0.2.0_linux_arm64.tar.gz"
+      sha256 "e7f09eecfdf9c1a79408a4f7b3a56f643dd67f6f6cbcef91cd8d31ab9a020a18"
       define_method(:install) do
         bin.install "shadow"
       end
